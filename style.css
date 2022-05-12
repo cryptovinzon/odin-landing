@@ -5,7 +5,7 @@ body{
 
 .hero {
     background-color: #1f2937;
-    padding: 0 100px 36px 100px;
+    padding: 0 100px 48px 100px;
     height: auto;
 }
 
@@ -31,34 +31,33 @@ h1 {
     font-size: 42px;
     font-weight: bolder;
     color: #f9faf8;
+    margin: 0;
 }
 
 p,
 a{
     font-size: 18px;
     color: #e5e7eb;
+    margin:0;
 }
 
 h2 {
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
-    color: #1f2937
+    color: #1f2937;
 }
+
 a {
     text-decoration: none;
 }
 
+/* container for hero text, button & img */
 .herocontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:24px;
-}
-
-.herotext {
-    display: flex;
-    width: 50%;
 }
 
 #heroimg {
@@ -75,14 +74,7 @@ button{
     background-color: #3882f6;
 }
 
-.square {
-    height: 100px;
-    width: 100px;
-    border: #3882f6 solid;
-    border-width: 4px;
-    border-radius: 10px;  
-}
-
+/* container for information */
 .infocontainer{
     display: flex;
     justify-content: center;
@@ -96,6 +88,77 @@ button{
     width: 100px;
 }
 
+.square {
+    height: 100px;
+    width: 100px;
+    border: #3882f6 solid;
+    border-width: 4px;
+    border-radius: 10px;  
+}
+
 .subtext {
     margin-top: 8px;
+}
+
+/* container for quote */
+.quotebox{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 36px;
+    padding: 72px;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    margin: 0;   
+}
+
+.author{
+    color: #1f2937;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* container for call to action */
+.actionbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    height: 80px;
+    margin: 5% 10%;
+    padding: 36px;
+    border-radius: 12px;
+}
+
+.actiontext{
+    display: flex;
+    flex-direction: column;
+}
+
+.action{
+    font-weight: bold;
+    margin: 0;
+}
+
+.button2 {
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 12px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    height: 128px;
 }
